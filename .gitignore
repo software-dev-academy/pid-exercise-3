@@ -1,0 +1,7 @@
+main.aux
+# These are all the log-files
+exercise3/*.log
+# This is all the latex files 
+**/*.tex
+# This is .out 
+**/*.out
