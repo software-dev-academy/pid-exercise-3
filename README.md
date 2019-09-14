@@ -13,8 +13,8 @@ These are some of the open questions for you to think about,
 1. How can we save the attendance sheet? What information do we need to save?
 2. How is JSON library handling file writes?
 3. What are the pros and cons of having to save a file
-  1. of the whole attendance sheet?
-  2. for every member?
+  - of the whole attendance sheet?
+  - for every member?
 4. What could be used instead of JSON?
 5. Discuss the decision behind your chosen library.
 6. What kind of data structure can we use to store members?
