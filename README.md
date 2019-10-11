@@ -9,6 +9,9 @@ Following exercise regards working with JSON, Javascript Object Notation. Some r
 5. Add new member(s) to a new member file or an existing member file.
 6. Delete a member from a member file.
 
+Last but not least, you have write tests for your program. You should write tests for at least two classes and for each class there should be three tests. 
+You should also convert you project into a .jar file with a [Build Tool](https://stackoverflow.com/questions/7249871/what-is-a-build-tool). For Java there are couple Build Tool you can choose from e.g. Gradle, Maven and Ant.
+
 These are some of the open questions for you to think about,
 1. How can we save the attendance sheet? What information do we need to save?
 2. How is JSON library handling file writes?
@@ -28,5 +31,6 @@ These are some of the open questions for you to think about,
 6. update current taken attendance.
 7. display latest date of taken attendance.
 -->
+
 
 All of these functionalities are active after the application is launched. It should not require a restart of the application for some of the functionalities to work. Java is the chosen programming language for this exercise. JSON sample file will be provide for you to load in your application. Explore and choose a suitable Java library of your own choice to parse and write JSON files. Good luck, and great job on the previous exercises.
