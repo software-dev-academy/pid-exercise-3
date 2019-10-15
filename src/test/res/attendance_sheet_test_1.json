@@ -1,0 +1,37 @@
+{
+  "attendance_sheet": [
+    {
+      "name": "David Yu",
+      "present": true
+    },
+    {
+      "name": "Mazen Bahy",
+      "present": true
+    },
+    {
+      "name": "Kwabena Asante-poku",
+      "present": true
+    },
+    {
+      "name": "Ric Glassey",
+      "present": false
+    },
+    {
+      "name": "Micky Mouse",
+      "present": false
+    },
+    {
+      "name": "Donald Duck",
+      "present": false
+    },
+    {
+      "name": "Steve Jobs",
+      "present": false
+    },
+    {
+      "name": "Batman Bin Suparman",
+      "present": false
+    }
+  ],
+  "date": "Oct 7, 2019, 12:00:00 AM"
+}

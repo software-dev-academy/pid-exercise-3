@@ -1,0 +1,401 @@
+{
+  "attendance_sheet": [
+    {
+      "name": "Jayda Tyson",
+      "present": true
+    },
+    {
+      "name": "Aya Lovell",
+      "present": true
+    },
+    {
+      "name": "Mara Halliday",
+      "present": true
+    },
+    {
+      "name": "Diesel Davenport",
+      "present": true
+    },
+    {
+      "name": "Maksymilian Heath",
+      "present": true
+    },
+    {
+      "name": "Juniper Fuller",
+      "present": true
+    },
+    {
+      "name": "Kaylem Mccall",
+      "present": true
+    },
+    {
+      "name": "Haya Hume",
+      "present": false
+    },
+    {
+      "name": "Louisa Grant",
+      "present": false
+    },
+    {
+      "name": "Daphne Giles",
+      "present": false
+    },
+    {
+      "name": "Naomi Irving",
+      "present": true
+    },
+    {
+      "name": "Catrina Salter",
+      "present": true
+    },
+    {
+      "name": "Hugh Dougherty",
+      "present": false
+    },
+    {
+      "name": "Sophia-Rose Salinas",
+      "present": false
+    },
+    {
+      "name": "Bert Rich",
+      "present": false
+    },
+    {
+      "name": "Nicola Barrera",
+      "present": false
+    },
+    {
+      "name": "Leia Hayden",
+      "present": false
+    },
+    {
+      "name": "Omar Decker",
+      "present": true
+    },
+    {
+      "name": "Naveed Blevins",
+      "present": false
+    },
+    {
+      "name": "Jimmie Bennett",
+      "present": true
+    },
+    {
+      "name": "Harleigh Mccray",
+      "present": true
+    },
+    {
+      "name": "Fahim Sullivan",
+      "present": true
+    },
+    {
+      "name": "Aeryn Hebert",
+      "present": true
+    },
+    {
+      "name": "Janice Lambert",
+      "present": true
+    },
+    {
+      "name": "Huey Drake",
+      "present": true
+    },
+    {
+      "name": "Theodor Turnbull",
+      "present": false
+    },
+    {
+      "name": "Tanvir Dixon",
+      "present": true
+    },
+    {
+      "name": "Angelika Kennedy",
+      "present": false
+    },
+    {
+      "name": "Yisroel Neale",
+      "present": true
+    },
+    {
+      "name": "Viktor Mcarthur",
+      "present": true
+    },
+    {
+      "name": "Hope May",
+      "present": true
+    },
+    {
+      "name": "Faisal Wall",
+      "present": false
+    },
+    {
+      "name": "Erika Bartlett",
+      "present": false
+    },
+    {
+      "name": "Waqas Stevenson",
+      "present": false
+    },
+    {
+      "name": "Clarissa Dunkley",
+      "present": true
+    },
+    {
+      "name": "Teejay Powell",
+      "present": true
+    },
+    {
+      "name": "Aayan Kinney",
+      "present": false
+    },
+    {
+      "name": "Loren Leonard",
+      "present": false
+    },
+    {
+      "name": "Kelvin Timms",
+      "present": false
+    },
+    {
+      "name": "Sara Nixon",
+      "present": false
+    },
+    {
+      "name": "Cody Appleton",
+      "present": true
+    },
+    {
+      "name": "Mohammad Potter",
+      "present": true
+    },
+    {
+      "name": "Karl Riddle",
+      "present": false
+    },
+    {
+      "name": "Brooke Frost",
+      "present": false
+    },
+    {
+      "name": "Judy Gillespie",
+      "present": true
+    },
+    {
+      "name": "Korban Velez",
+      "present": true
+    },
+    {
+      "name": "Jaidon Farrell",
+      "present": false
+    },
+    {
+      "name": "Ayman Gibbons",
+      "present": true
+    },
+    {
+      "name": "Camron Navarro",
+      "present": true
+    },
+    {
+      "name": "Marwan Mcclain",
+      "present": false
+    },
+    {
+      "name": "Kirstin Vinson",
+      "present": false
+    },
+    {
+      "name": "Usman Moyer",
+      "present": true
+    },
+    {
+      "name": "Aaisha Ferguson",
+      "present": true
+    },
+    {
+      "name": "Kaidan Howells",
+      "present": false
+    },
+    {
+      "name": "Samira Chaney",
+      "present": true
+    },
+    {
+      "name": "Robert Brady",
+      "present": true
+    },
+    {
+      "name": "Shanice Morin",
+      "present": true
+    },
+    {
+      "name": "Amirah Guy",
+      "present": false
+    },
+    {
+      "name": "Evie-Grace Welch",
+      "present": false
+    },
+    {
+      "name": "Raphael Hill",
+      "present": false
+    },
+    {
+      "name": "Freja Snider",
+      "present": true
+    },
+    {
+      "name": "Esa Moran",
+      "present": false
+    },
+    {
+      "name": "Kadeem Patterson",
+      "present": false
+    },
+    {
+      "name": "Ellie-Rose Cole",
+      "present": true
+    },
+    {
+      "name": "Luna Richards",
+      "present": true
+    },
+    {
+      "name": "Kien Rennie",
+      "present": true
+    },
+    {
+      "name": "Anja Weeks",
+      "present": true
+    },
+    {
+      "name": "Roseanna Tucker",
+      "present": true
+    },
+    {
+      "name": "Kerrie Hull",
+      "present": true
+    },
+    {
+      "name": "Grace Lowry",
+      "present": false
+    },
+    {
+      "name": "Onur Strickland",
+      "present": false
+    },
+    {
+      "name": "Keisha Payne",
+      "present": false
+    },
+    {
+      "name": "Blair Childs",
+      "present": false
+    },
+    {
+      "name": "Ariella Derrick",
+      "present": true
+    },
+    {
+      "name": "Aneurin Love",
+      "present": false
+    },
+    {
+      "name": "Fergus Mejia",
+      "present": false
+    },
+    {
+      "name": "Rumaysa Singh",
+      "present": true
+    },
+    {
+      "name": "Bianca Wong",
+      "present": true
+    },
+    {
+      "name": "Olaf Conrad",
+      "present": false
+    },
+    {
+      "name": "Mica Duggan",
+      "present": false
+    },
+    {
+      "name": "Veer Gardner",
+      "present": true
+    },
+    {
+      "name": "Rima Salt",
+      "present": false
+    },
+    {
+      "name": "Portia Galloway",
+      "present": false
+    },
+    {
+      "name": "Mylo Bannister",
+      "present": true
+    },
+    {
+      "name": "Faheem Oliver",
+      "present": false
+    },
+    {
+      "name": "Benas Bellamy",
+      "present": false
+    },
+    {
+      "name": "Andreas Bullock",
+      "present": false
+    },
+    {
+      "name": "Rayan Romero",
+      "present": true
+    },
+    {
+      "name": "Elissa Cherry",
+      "present": false
+    },
+    {
+      "name": "Aila Cook",
+      "present": true
+    },
+    {
+      "name": "Krisha Stout",
+      "present": false
+    },
+    {
+      "name": "Martine Rivers",
+      "present": true
+    },
+    {
+      "name": "Kylie Cobb",
+      "present": false
+    },
+    {
+      "name": "Hilda Redmond",
+      "present": true
+    },
+    {
+      "name": "Niyah Logan",
+      "present": true
+    },
+    {
+      "name": "Jai Howell",
+      "present": false
+    },
+    {
+      "name": "Lily-Mai Beech",
+      "present": false
+    },
+    {
+      "name": "Eileen Henderson",
+      "present": false
+    },
+    {
+      "name": "Roberto Fischer",
+      "present": false
+    }
+  ],
+  "date": "Nov 13, 2018, 12:00:00 AM"
+}

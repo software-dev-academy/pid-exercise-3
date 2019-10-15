@@ -8,3 +8,20 @@ exercise3/*.log
 
 # This is the word files 
 *.docx
+
+# throwaway playground folder
+scratch/
+
+# only keep example1.json in member-lists folder
+member-lists/*
+!member-lists/example1.json
+
+# attendance-sheets out folder
+attendance-sheets/
+
+# gradle
+build/
+.gradle
+
+#Intellij
+.idea/
