@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.text.DateFormat;
@@ -127,6 +128,8 @@ public class Start {
 
             result.forEach(System.out::println);
             return result;
+        } catch (NoSuchFileException e) {
+            return new ArrayList<String>();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -140,7 +143,7 @@ public class Start {
     }
 
     public static void loadMemberFileAndTakeAttendance() {
-        MemberList memberList = askInputAndLoadJsonFile(MemberList.class, "member-lists/");
+        MemberList memberList = askInputAndLoadJsonFile(MemberList.class, "member file", "member-lists/");
         System.out.println("gson:");
         System.out.println(new Gson().toJson(memberList));
         if (memberList != null) {
@@ -199,11 +202,11 @@ public class Start {
     }
 
     private static <T> T askInputAndLoadJsonFile(Class<T> tClass, String pathName) {
-        return askInputAndLoadJsonFile(tClass, tClass.getName(), pathName);
+        return askInputAndLoadJsonFile(tClass, tClass.getName() + " file", pathName);
     }
 
     private static <T> T askInputAndLoadJsonFile(Class<T> tClass, String fileHint, String pathName) {
-        System.out.println("Write the name of your " + fileHint + " file.");
+        System.out.println("Write the name of your " + fileHint + ".");
         String fileName = pathName + scanner.nextLine();
         return loadJsonFile(tClass, fileName);
     }
