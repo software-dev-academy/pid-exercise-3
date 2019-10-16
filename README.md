@@ -20,7 +20,7 @@ member).
 Last but not least, you have write tests for your program. You should write tests for at least two classes and for each 
 class there should be three tests. 
 You should also convert you project into a .jar file with 
-a [Build Tool](https://stackoverflow.com/questions/7249871/what-is-a-build-tool). For Java there are couple Build Tool 
+a [Build Tool](https://stackoverflow.com/questions/7249871/what-is-a-build-tool). For Java there are couple Build Tools 
 you can choose from e.g. Gradle, Maven and Ant.
 
 These are some of the open questions for you to think about,
