@@ -2,14 +2,20 @@ package se.kth.sda.attendance;
 
 class AttendanceSlot {
     private String name;
+    private String id;
     private boolean present;
 
-    public AttendanceSlot(String name) {
+    public AttendanceSlot(String name, String id) {
         this.name = name;
+        this.id = id;
         this.present = false;
     }
 
-    public String getPersonName() {
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
         return name;
     }
 

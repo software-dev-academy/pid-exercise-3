@@ -10,6 +10,7 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -22,10 +23,15 @@ public class AttendanceSheetHandler {
 
     public static void takeAttendance(AttendanceSheet attendanceSheet, Scanner scanner) {
         System.out.println("Taking attendance...");
+        List<String> duplicateIds = attendanceSheet.getDuplicateIDs();
+        if (duplicateIds.size() > 0) {
+            System.out.println("\n\n******WARNING******\n\nThere are duplicate ids of some members:");
+            duplicateIds.forEach(id -> System.out.println("Duplicate id: " + id));
+        }
         Date date = getAttendanceDateFromInput(scanner);
         attendanceSheet.setDate(date);
         for (AttendanceSlot slot : attendanceSheet.getAttendanceSlots()) {
-            String answer = Start.askYesNo("Is " + slot.getPersonName() + " present? [y/n]");
+            String answer = Start.askYesNo("Is " + slot.getName() + " present? [y/n]");
             if (answer.equals("y")) {
                 slot.markAsPresent();
             } else {
@@ -85,7 +91,7 @@ public class AttendanceSheetHandler {
     public static void printAttendanceSheet (AttendanceSheet attendanceSheet) {
         System.out.println("Attendance sheet for date " + dateFormat.format(attendanceSheet.getDate()));
         for (AttendanceSlot attendanceSlot: attendanceSheet.getAttendanceSlots()) {
-            System.out.print(attendanceSlot.getPersonName() + "\t\t");
+            System.out.print(attendanceSlot.getName() + "\t\t");
             if (attendanceSlot.isPresent()) {
                 System.out.println("Present");
             } else {

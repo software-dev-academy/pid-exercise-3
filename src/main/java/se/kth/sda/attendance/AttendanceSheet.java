@@ -1,19 +1,11 @@
 package se.kth.sda.attendance;
 
-import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
-import se.kth.sda.Start;
+import se.kth.sda.member.Member;
 import se.kth.sda.member.MemberList;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Scanner;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class AttendanceSheet {
 
@@ -41,8 +33,8 @@ public class AttendanceSheet {
 
     public AttendanceSheet(MemberList memberList) {
         attendanceSlots = new ArrayList<AttendanceSlot>();
-        for (String name : memberList.getNames()) {
-            attendanceSlots.add(new AttendanceSlot(name));
+        for (Member member : memberList.getMembers()) {
+            attendanceSlots.add(new AttendanceSlot(member.getName(), member.getId()));
         }
     }
 
@@ -69,10 +61,20 @@ public class AttendanceSheet {
         }
         return total;
     }
+    /**
+     * Gets a list of ids which are duplicate in AttendanceSheet.
+     * @return list of ids.
+     */
+    public List<String> getDuplicateIDs() {
+        List<String> idList = attendanceSlots.stream()
+                .map(a -> a.getId())
+                .collect(Collectors.toList());
 
-    public void addPerson(String name) {
-        AttendanceSlot attendanceSlot = new AttendanceSlot(name);
-        attendanceSlots.add(attendanceSlot);
+        List<String> duplicateIdList = idList.stream()
+                .filter(id -> Collections.frequency(idList, id) > 1)
+                .distinct()
+                .collect(Collectors.toList());
+        return duplicateIdList;
     }
 
 }

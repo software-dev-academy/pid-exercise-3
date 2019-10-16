@@ -59,10 +59,42 @@ public class MemberList {
     }
 
     /**
+     * Gets a list of the members in MemberList.
+     * @return list of names.
+     */
+    public List<Member> getMembers() {
+        return members;
+    }
+
+    /**
      * Gets size of MemberList.
      * @return size.
      */
     public int size() {
         return members.size();
+    }
+
+    /**
+     * Returns true if MemberList contains duplicate ids, false otherwise.
+     * @return
+     */
+    public boolean containsDuplicateIDs() {
+        return getDuplicateIDs().size() > 0;
+    }
+
+    /**
+     * Gets a list of ids which are duplicate in MemberList.
+     * @return list of ids.
+     */
+    public List<String> getDuplicateIDs() {
+        List<String> idList = members.stream()
+                .map(m -> m.getId())
+                .collect(Collectors.toList());
+
+        List<String> duplicateIdList = idList.stream()
+                .filter(n -> Collections.frequency(idList, n) > 1)
+                .distinct()
+                .collect(Collectors.toList());
+        return duplicateIdList;
     }
 }

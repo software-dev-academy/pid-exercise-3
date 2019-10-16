@@ -28,11 +28,6 @@ public class Start {
 
     static final Scanner scanner = new Scanner(System.in);
 
-    public enum Option {
-        SUNDAY, MONDAY, TUESDAY, WEDNESDAY,
-        THURSDAY, FRIDAY, SATURDAY
-    }
-
     static String datePattern = "dd-MM-yyyy";
     static DateFormat dateFormat = new SimpleDateFormat(datePattern);
 
@@ -67,7 +62,6 @@ public class Start {
 
             if (line.equals("load")) {
                 loadMemberFileAndTakeAttendance();
-
             } else if (line.equals("edit")) {
                 editMemberList();
             } else if (line.equals("new")) {
@@ -101,7 +95,6 @@ public class Start {
             System.out.println("Date does not match any attendance sheet.");
         }
     }
-
 
     private static boolean isDateStringValidFormat(String value) {
         Date date = null;
@@ -144,11 +137,8 @@ public class Start {
 
     public static void loadMemberFileAndTakeAttendance() {
         MemberList memberList = askInputAndLoadJsonFile(MemberList.class, "member file", "member-lists/");
-        System.out.println("gson:");
-        System.out.println(new Gson().toJson(memberList));
         if (memberList != null) {
             AttendanceSheet attendanceSheet = new AttendanceSheet(memberList);
-            addPeopleToAttendanceSheet(attendanceSheet);
             AttendanceSheetHandler.takeAttendance(attendanceSheet, scanner);
             saveAttendanceSheet(attendanceSheet);
         }
@@ -159,21 +149,6 @@ public class Start {
         MemberList memberList = askInputAndLoadJsonFile(MemberList.class, "member-lists/");
         MemberListHandler.edit(memberList, scanner);
         MemberListHandler.saveToFile(memberList, scanner);
-    }
-
-    public static void addPeopleToAttendanceSheet(AttendanceSheet sheet) {
-        boolean writeName = true;
-        System.out.println("You can now add people to the sheet if you want to.");
-        while (writeName) {
-            System.out.println("Write the name of a person [First name Last name] you want to add to the list or write '#' to continue.");
-            String name = scanner.nextLine();
-            if (!name.equals("#")) {
-                sheet.addPerson(name);
-                System.out.println("Added!");
-            } else {
-                writeName = false;
-            }
-        }
     }
 
     public static void saveAttendanceSheet(AttendanceSheet sheet) {
