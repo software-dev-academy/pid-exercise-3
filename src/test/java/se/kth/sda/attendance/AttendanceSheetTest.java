@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-import se.kth.sda.MemberList;
+import se.kth.sda.member.MemberList;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -40,7 +40,7 @@ public class AttendanceSheetTest {
 
         int count = attendanceSheet.count();
 
-        assertEquals(7, count);
+        assertEquals(8, count);
     }
 
     @Test

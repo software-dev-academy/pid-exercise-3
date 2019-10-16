@@ -2,6 +2,9 @@ package se.kth.sda;
 
 import com.google.gson.Gson;
 import se.kth.sda.attendance.AttendanceSheet;
+import se.kth.sda.attendance.AttendanceSheetHandler;
+import se.kth.sda.member.MemberList;
+import se.kth.sda.member.MemberListHandler;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -18,6 +21,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
 
 public class Start {
 
@@ -91,7 +95,7 @@ public class Start {
         AttendanceSheet attendanceSheet = loadJsonFile(AttendanceSheet.class, fileName);
 
         if (attendanceSheet != null) {
-            attendanceSheet.print();
+            AttendanceSheetHandler.printAttendanceSheet(attendanceSheet);
         } else {
             System.out.println("Date does not match any attendance sheet.");
         }
@@ -131,8 +135,8 @@ public class Start {
 
     private static void newMemberList() {
         MemberList memberList = new MemberList();
-        memberList.edit();
-        memberList.saveToFile();
+        MemberListHandler.edit(memberList, scanner);
+        MemberListHandler.saveToFile(memberList, scanner);
     }
 
     public static void loadMemberFileAndTakeAttendance() {
@@ -142,7 +146,7 @@ public class Start {
         if (memberList != null) {
             AttendanceSheet attendanceSheet = new AttendanceSheet(memberList);
             addPeopleToAttendanceSheet(attendanceSheet);
-            attendanceSheet.takeAttendance(scanner);
+            AttendanceSheetHandler.takeAttendance(attendanceSheet, scanner);
             saveAttendanceSheet(attendanceSheet);
         }
 
@@ -150,8 +154,8 @@ public class Start {
 
     public static void editMemberList() {
         MemberList memberList = askInputAndLoadJsonFile(MemberList.class, "member-lists/");
-        memberList.edit();
-        memberList.saveToFile();
+        MemberListHandler.edit(memberList, scanner);
+        MemberListHandler.saveToFile(memberList, scanner);
     }
 
     public static void addPeopleToAttendanceSheet(AttendanceSheet sheet) {
@@ -172,7 +176,7 @@ public class Start {
     public static void saveAttendanceSheet(AttendanceSheet sheet) {
         String answer = askYesNo("Do you want to save your attendance sheet? [y/n]");
         if (answer.equals("y")) {
-            sheet.saveToFile();
+            AttendanceSheetHandler.saveToFile(sheet);
         }
     }
 
