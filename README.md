@@ -24,7 +24,7 @@ see who has attended.
 sheets from which the user can choose or you can show one attendance list at a time and let the user go to the next or
 previous one.
 
-Requirements:
+### Requirements:
 - You should write tests for at least two classes and for each class there should be at least three tests. 
 
 - You should also convert you project into a .jar file with 
