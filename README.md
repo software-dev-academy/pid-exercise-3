@@ -5,9 +5,11 @@ following [links](https://www.w3schools.com/js/js_json_intro.asp), [json](https:
 data-interchange format, meaning that it is used for formatting documents such that data can be exchanged between 
 computers. These types of documents are human read- and writable. JSON documents are also easy for computers to parse 
 and generate which means that it is compatible with many programming language. Therefore, it is suitable tool for long 
-term storage for small applications. In this exercise you’ll code an application for taking attendance. The application 
+term storage for small applications. In this exercise you’ll code an application for taking attendance. It should make
+use of member files. A member file is simply a JSON file containing a list of people represented by a name and an id. See
+the sample file [`member-lists/example1.json`](member-lists/example1.json). The application 
 should run in the terminal and have a text interface, similar to the project in Individual Project. The functionalities 
-should include
+should include:
 
 1. Load in a member file (one sample file is provided for you).
 2. Take the attendance of every member in the loaded file.
@@ -45,6 +47,5 @@ These are some of the open questions for you to think about,
 
 
 All of these functionalities are active after the application is launched. It should not require a restart of the 
-application for some of the functionalities to work. Java is the chosen programming language for this exercise. 
-JSON sample file will be provide for you to load in your application. Explore and choose a suitable Java library of 
+application for some of the functionalities to work. Java is the chosen programming language for this exercise. Explore and choose a suitable Java library of 
 your own choice to parse and write JSON files. Good luck, and great job on the previous exercises.
