@@ -19,6 +19,7 @@ should include:
 see who has attended.
 
 **Extra functionalities**:
+
 6. Add a way to create new member files via your application and a way to edit existing member files (add/remove people).
 5. Make it so that you can browse through previously saved attendance sheets. You can either show a list of attendance
 sheets from which the user can choose or you can show one attendance list at a time and let the user go to the next or
