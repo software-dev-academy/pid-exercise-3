@@ -1,7 +1,7 @@
 # Programming in Depth - Exercise 3 - JSON
 
 Following exercise regards working with JSON, Javascript Object Notation. Some resources are provide in the 
-following [links](https://www.w3schools.com/js/js_json_intro.asp), [json](https://json.org). JSON is a lightweight 
+following links: [JSON intro](https://www.w3schools.com/js/js_json_intro.asp), [json.org](https://json.org). JSON is a lightweight 
 data-interchange format, meaning that it is used for formatting documents such that data can be exchanged between 
 computers. These types of documents are human read- and writable. JSON documents are also easy for computers to parse 
 and generate which means that it is compatible with many programming language. Therefore, it is suitable tool for long 
