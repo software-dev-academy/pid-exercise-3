@@ -44,7 +44,7 @@ your own choice to parse and write JSON files.
 
 ### Questions
 
-These are some of the open questions for you to think about,
+These are some open questions for you to think about,
 1. How can we save the attendance sheet? What information do we need to save?
 1. How is the JSON library handling file writes?
 1. What are the pros and cons of having to save a file...
