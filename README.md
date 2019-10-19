@@ -5,7 +5,10 @@ following links: [JSON intro](https://www.w3schools.com/js/js_json_intro.asp), [
 data-interchange format, meaning that it is used for formatting documents such that data can be exchanged between 
 computers. These types of documents are human read- and writable. JSON documents are also easy for computers to parse 
 and generate which means that it is compatible with many programming language. Therefore, it is suitable tool for long 
-term storage for small applications. In this exercise you’ll code an application for taking attendance. It should make
+term storage for small applications. 
+
+### Task
+In this exercise you’ll code an application for taking attendance. It should make
 use of member files. A member file is simply a JSON file containing a list of people represented by a name and an id. See
 the sample file [`member-lists/example1.json`](member-lists/example1.json). The application 
 should run in the terminal and have a text interface, similar to the project in Individual Project. The functionalities 
