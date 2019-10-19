@@ -39,18 +39,20 @@ you can choose from e.g. Gradle, Maven and Ant.
 
 - It should not require a restart of the application for some of the functionalities to work.
 
-Java is the chosen programming language for this exercise. Explore and choose a suitable Java library of 
+- Java is the chosen programming language for this exercise. Explore and choose a suitable Java library of 
 your own choice to parse and write JSON files.
+
+### Questions
 
 These are some of the open questions for you to think about,
 1. How can we save the attendance sheet? What information do we need to save?
-2. How is the JSON library handling file writes?
-3. What are the pros and cons of having to save a file...
-  - ...of the whole attendance sheet?
-  - ...for every member?
-4. What could be used instead of JSON?
-5. Discuss the decision behind your chosen library.
-6. What kind of data structure can we use to store members?
-7. What kind of data structures can we use for the application?
+1. How is the JSON library handling file writes?
+1. What are the pros and cons of having to save a file...
+   1. ...of the whole attendance sheet?
+   1. ...for every member?
+1. What could be used instead of JSON?
+1. Discuss the decision behind your chosen library.
+1. What kind of data structure can we use to store members?
+1. What kind of data structures can we use for the application?
 
 Good luck, and great job on the previous exercises.
