@@ -12,9 +12,9 @@ exercise3/*.log
 # throwaway playground folder
 scratch/
 
-# only keep example1.json in member-lists folder
+# only keep example-member-list.json in member-lists folder
 member-lists/*
-!member-lists/example1.json
+!member-lists/example-member-list.json
 
 # attendance-sheets out folder
 attendance-sheets/
