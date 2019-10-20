@@ -12,8 +12,8 @@ import static org.apache.commons.text.CharacterPredicates.LETTERS;
 public class MemberList {
     private List<Member> members;
 
-    // Used for generating random alpha-numerical strings
-    private RandomStringGenerator stringGenerator = new RandomStringGenerator.Builder()
+    // Used for generating id
+    private static RandomStringGenerator stringGenerator = new RandomStringGenerator.Builder()
             .withinRange('0', 'z')
             .filteredBy(LETTERS, DIGITS)
             .build();
@@ -30,7 +30,7 @@ public class MemberList {
     public List<String> getDuplicateNames() {
         ArrayList<String> list = new ArrayList<>();
         List<String> nameList = members.stream()
-                .map(m -> m.getName())
+                .map(Member::getName)
                 .collect(Collectors.toList());
         List<String> duplicateList = nameList.stream()
                 .filter(n -> Collections.frequency(nameList, n) > 1)
@@ -40,7 +40,7 @@ public class MemberList {
     }
 
     /**
-     * Adds a new member to the MemeberList with a generated unique id.
+     * Adds a new member to the MemberList with a generated unique id.
      *
      * @param name
      */
@@ -51,11 +51,23 @@ public class MemberList {
     }
 
     /**
+     * Removes members from the MemberList that matches (exact match) the given name. Returns true if a member was
+     * removed, false otherwise.
+     *
+     * @param name
+     */
+    public boolean remove(String name) {
+        int start_size = members.size();
+        members = members.stream().filter(m -> !m.getName().equals(name)).collect(Collectors.toList());
+        return start_size == members.size();
+    }
+
+    /**
      * Gets a list of names matching the names of members in MemberList.
      * @return list of names.
      */
     public List<String> getNames() {
-        return members.stream().map(m -> m.getName()).collect(Collectors.toList());
+        return members.stream().map(Member::getName).collect(Collectors.toList());
     }
 
     /**
@@ -88,7 +100,7 @@ public class MemberList {
      */
     public List<String> getDuplicateIDs() {
         List<String> idList = members.stream()
-                .map(m -> m.getId())
+                .map(Member::getId)
                 .collect(Collectors.toList());
 
         List<String> duplicateIdList = idList.stream()

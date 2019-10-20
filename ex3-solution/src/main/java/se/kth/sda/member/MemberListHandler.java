@@ -42,26 +42,31 @@ public class MemberListHandler {
     public static void edit(MemberList memberList, Scanner scanner) {
         printEditInstructions();
 
-        boolean isValidInput = false;
-        while (!isValidInput) {
+        boolean askForInput = true;
+        while (askForInput) {
             System.out.println("Write a commmand or write '#' to continue.");
             String answer = scanner.nextLine();
 
             if (answer.strip().equals("#")) {
-                break;
+                askForInput = false;
             } else if (answer.strip().equals("help")) {
                 printEditInstructions();
                 continue;
             }
 
             if (isValidEditCommand(answer)) {
-                isValidInput = true;
                 String command = answer.split(" ")[0];
                 String name = answer.split(" ", 2)[1];
                 if (command.equals("add")) {
-//                    memberList.add
+                    memberList.add(name);
+                    System.out.println("Member added!");
                 } else if (command.equals("remove")) {
-                    //
+                    boolean wasRemoved = memberList.remove(name);
+                    if (wasRemoved) {
+                        System.out.println("Removed member(s)!");
+                    } else {
+                        System.out.println("No member found with matching name!");
+                    }
                 }
 
             } else {
