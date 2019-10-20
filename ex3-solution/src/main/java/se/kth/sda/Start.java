@@ -115,7 +115,7 @@ public class Start {
             List<String> result = walk.map(x -> x.toString())
                     .filter(f -> f.endsWith(".json"))
                     .map(f -> f.substring(0, f.length() - 5))
-                    .map(f -> f.replaceFirst("attendance-sheets/", ""))
+                    .map(f -> f.replaceFirst("attendance-sheets.", ""))
                     .filter(f -> isDateStringValidFormat(f))
                     .collect(Collectors.toList());
 
