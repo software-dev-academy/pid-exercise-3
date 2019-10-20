@@ -19,4 +19,7 @@ dependencies {
 
 jar {
     manifest.attributes "Main-Class": "se.kth.sda.Start"
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
 }
