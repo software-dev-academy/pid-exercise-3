@@ -10,7 +10,7 @@ term storage for small applications.
 ### Task
 In this exercise you’ll code an application for taking attendance. It should make
 use of member files. A member file is simply a JSON file containing a list of people represented by a name and an id. See
-the sample file [`member-lists/example1.json`](member-lists/example1.json). The application 
+the sample file `example-member-list.json`. The application 
 should run in the terminal and have a text interface, similar to the project in Individual Project. The functionalities 
 should include:
 
